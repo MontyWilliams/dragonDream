@@ -1,5 +1,7 @@
 import { gql, GraphQLClient } from 'graphql-request'
 import { useState } from 'react';
+import Link from 'next/link'
+import Image from 'next/image'
 
 export const getServerSideProps = async (pageContext) => {
     const url = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
@@ -57,11 +59,11 @@ function Video({ video }) {
     const [watching, setWatching] = useState(false)
   return (
     <>
-        {!watching && <img className="video-image" src={video.thumbnail.url} alt={video.title} />}
+        {!watching && <Image className="video-image" src={video.thumbnail.url} alt={video.title} />}
         {!watching && <div className="info">
             <p>{video.tags.join(', ')}</p>
             <p>{video.description}</p>
-            <a href="/"><p>Go Back</p></a>
+            <Link href="/"><p>Go Back</p></Link>
             <button></button>
             </div>}
             {/* If Watching is true then show the div */}

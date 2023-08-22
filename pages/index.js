@@ -3,6 +3,7 @@ import Section from '../components/Section';
 import NavBar from '../components/NavBar';
 import { useState, useRef } from 'react'
 import { gsap } from 'gsap';
+import {Image} from 'next/Image'
 
 
 const url = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
@@ -67,7 +68,7 @@ export default function Home({videos}) {
         <NavBar />
       <div className="bg-[#13151F] text-white p-0 m-0">
         <div className="w-[100%] h-[30vh] overflow-hidden relative">
-            <img className="w-[100vw]" 
+            <Image className="w-[100vw]" 
               src={randomVideo(videos).thumbnail.url}
               alt={randomVideo(videos).title}
               />

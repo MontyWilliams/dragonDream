@@ -3,7 +3,7 @@ import Section from '../components/Section';
 import NavBar from '../components/NavBar';
 import { useState, useRef } from 'react'
 import { gsap } from 'gsap';
-import {Image} from 'next/Image'
+import Image from 'next/image'
 
 
 const url = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;

@@ -1,0 +1,1 @@
+{"version":"0.1.0","name":"modern_disney_plus","dependencies":{"graphql-request":{"version":"5.1.0"},"graphql":{"version":"16.6.0"},"gsap":{"version":"3.12.2"},"next":{"version":"13.1.1"},"react-dom":{"version":"18.2.0"},"react":{"version":"18.2.0"}}}

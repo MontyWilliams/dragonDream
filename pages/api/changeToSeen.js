@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { GraphQLClient } from 'graphql-request';
 
 export default async ({body}, res) => {
